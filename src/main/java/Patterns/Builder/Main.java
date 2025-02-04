@@ -11,5 +11,11 @@ public class Main {
         System.out.println(Golding.getCountOfPages());
         System.out.println(Golding.getTitle());
         System.out.println(Golding.getYear());
+
+        Golding=BookClass.builder()
+                .title("Hyi")
+                .build();
+        System.out.println(Golding.getTitle());
+        System.out.println(Golding.getYear());
     }
 }
