@@ -8,7 +8,7 @@ public class Test {
     }
 
     public synchronized void increment(){
-        counter++;
+            counter++;
     }
 
     public  void doWork() throws InterruptedException {

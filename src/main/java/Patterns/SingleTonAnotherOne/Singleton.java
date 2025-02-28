@@ -8,9 +8,12 @@ public class Singleton {
         counter++;
     }
 
+    private static class SingleTon{
+        private static final Singleton INSTANCE=new Singleton();
+    }
+
     public static Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
-        } return instance;
+        counter++;
+       return SingleTon.INSTANCE;
     }
 }
